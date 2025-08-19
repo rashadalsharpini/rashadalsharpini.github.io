@@ -8,7 +8,7 @@
 # For technical reasons, this file is *NOT* reloaded automatically when you use
 # 'bundle exec jekyll serve'. If you change this file, please restart the server process.
 #
-# If you need help with YAML syntax, here are some quick references for you: 
+# If you need help with YAML syntax, here are some quick references for you:
 # https://learn-the-web.algonquindesign.ca/topics/markdown-yaml-cheat-sheet/#yaml
 # https://learnxinyminutes.com/docs/yaml/
 #
@@ -35,14 +35,14 @@ preferences:
     enabled: true
 
 # Site Configuration
-title: "Your Site Title"
-heading: "Your Name"
-description: "A brief description of your site"
-url: "https://yoursite.com"
+title: "notes and thoughts"
+heading: "Rashad"
+description: "Just dump my notes and thoughts here"
+url: "rashadalsharpini.github.io"
 baseurl: ""
 
 # Asset Configuration
-apple_touch_icon: "/assets/img/profile.png"
+apple_touch_icon: "/assets/img/profile.jpg"
 css_file: "/assets/css/style.css"
 ie_css: "/assets/css/ie-target.css"
 
@@ -57,7 +57,7 @@ menu:
 
 # Footer
 footer:
-  copyright: "© 2024 Your Name. Contents under CC-BY-NC"
+  copyright: "© 2025 rashadalsharpini. Contents under MIT license"
   credits:
     enabled: true
     url: "/credits"
