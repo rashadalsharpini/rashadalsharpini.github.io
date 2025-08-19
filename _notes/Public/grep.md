@@ -1,3 +1,8 @@
+---
+title: Grep
+feed: show
+date: 2025-08-19
+---
 - **to make act like and**:
 `history | grep sudo | grep nvim`
 
