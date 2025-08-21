@@ -1,5 +1,5 @@
 ---
-title: Chap
+title: Chapter 1
 feed: show
 date: 2025-08-21
 ---
