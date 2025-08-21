@@ -14,6 +14,7 @@ assuming that a time limit is 1 second
 | n <= 5000  | O($n^2$)                 |
 | n <= 10^6  | O($nlogn$) or O(n)       |
 | n is large | O(1) or O($logn$)        |
+
 ### Maximum sub-array problem
 #### algorithm 1 $n^3$
 ```cpp
@@ -59,5 +60,6 @@ cout<<best<<endl;
 | 10^5         | >10    | 5.3    | 0      |
 | 10^6         | >10    | >10    | 0      |
 | 10^7         | >10    | >10    | 0      |
+
 The comparison shows that all algorithms are efficient when the input size is small, but larger inputs bring out remarkable difference in the running tims
 of the algorithm.

@@ -40,17 +40,24 @@ This loop reads elements from the input one after another, until there is no mor
 The most used integer type in competitive programming is int, which is a 32-bit
 type with a value range of
 
+{% raw %}
 $$[-2^{31} to 2^{31}-1]or about[-2.10^9 to 2.10^9]$$
+{% endraw %}
+
 
 if the type int is not enough, the 64-bit type long long can be used it has a
 value range of
 
+{% raw %}
 $$[-2^{63} to 2^{63} - 1] -1 or about [-9.10^{18} to 9.10^{18}]$$
+{% endraw %}
 
 g++ compiler also provides a 128-bit `__int128_t`
 with a value range of
 
+{% raw %}
 $$[-2^{127} to 2^{127} - 1] or about [-10^{38} to 10^{38}]$$
+{% endraw %}
 
 However, this type is not available in all contest systems.
 
@@ -66,14 +73,19 @@ Sometimes, the answer to a problem is a very large number but it is enough to ou
 #### Mathematics
 Sum formulas
 
-
+{% raw %}
 $$ \sum_{i=1}^{n} i^k $$
+{% endraw %}
 
 
+{% raw %}
 $$\sum_{i=1}^n x = 1+2+3+....+n=n(n+1)/2$$
+{% endraw %}
 
 
+{% raw %}
 $$\sum_{x=1}^n x^2 = 1^2+2^2+3^2+...+n^2 = n(n+1)(2n+1) / 6$$
+{% endraw %}
 
 
 #### logic
