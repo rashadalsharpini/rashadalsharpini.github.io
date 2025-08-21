@@ -1,13 +1,8 @@
-<!-- MathJax Support -->
-<script
-    type="text/javascript"
-    id="MathJax-script"
-    async
-    src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"
-></script>
-<script>
+<!-- MathJax Configuration -->
+<script type="text/javascript">
     window.MathJax = {
         tex: {
+            packages: ["base", "ams", "noerrors", "noundefined"],
             inlineMath: [
                 ["$", "$"],
                 ["\\(", "\\)"],
@@ -16,6 +11,20 @@
                 ["$$", "$$"],
                 ["\\[", "\\]"],
             ],
+            processEscapes: true,
+            processEnvironments: true,
+        },
+        options: {
+            ignoreHtmlClass: "tex2jax_ignore",
+            processHtmlClass: "tex2jax_process",
+        },
+        loader: {
+            load: ["[tex]/noerrors"],
         },
     };
 </script>
+<script
+    id="MathJax-script"
+    async
+    src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"
+></script>
