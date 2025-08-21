@@ -38,11 +38,14 @@ while(cin >> x)
 This loop reads elements from the input one after another, until there is no more date available in the input.
 #### Integers
 The most used integer type in competitive programming is int, which is a 32-bit
-type with a value range of $$[-2^{31} to 2^{31}-1]or about[-2.10^9 to 2.10^9]$$
+type with a value range of
+$$[-2^{31} to 2^{31}-1]or about[-2.10^9 to 2.10^9]$$
 if the type int is not enough, the 64-bit type long long can be used it has a
-value range of $$[-2^{63} to 2^{63} - 1] -1 or about [-9.10^{18} to 9.10^{18}]$$
+value range of
+$$[-2^{63} to 2^{63} - 1] -1 or about [-9.10^{18} to 9.10^{18}]$$
 g++ compiler also provides a 128-bit `__int128_t`
-with a value range of $$[-2^{127} to 2^{127} - 1] or about [-10^{38} to 10^{38}]$$
+with a value range of
+$$[-2^{127} to 2^{127} - 1] or about [-10^{38} to 10^{38}]$$
 However, this type is not available in all contest systems.
 
 ---
