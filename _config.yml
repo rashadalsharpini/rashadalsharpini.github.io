@@ -76,7 +76,7 @@ defaults:
       type: "notes"
     values:
       layout: "Post"
-      content-type: "notes"
+      content_type: "notes"
       feed: "show"
   - scope:
       path: ""
