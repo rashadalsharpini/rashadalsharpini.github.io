@@ -40,6 +40,7 @@ heading: "Rashad"
 description: "Just dump my notes and thoughts here"
 url: "rashadalsharpini.github.io"
 baseurl: ""
+markdown: GFM
 
 # Asset Configuration
 apple_touch_icon: "/assets/img/profile.jpg"
@@ -100,8 +101,6 @@ privatelinks:
 # Math rendering
 katex: true
 
-kramdown:
-  math_engine: katex
 # Exclude from processing
 exclude:
   - Gemfile
