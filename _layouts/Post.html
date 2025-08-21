@@ -92,7 +92,7 @@
             type="application/rss+xml"
             href="{{ site.url }}/feed.xml"
         />
-        <link
+        <!-- <link
             rel="stylesheet"
             href="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.css"
         />
@@ -104,7 +104,7 @@
             defer
             src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/contrib/auto-render.min.js"
             onload="renderMathInElement(document.body);"
-        ></script>
+        ></script> -->
     </head>
 
     <body>
@@ -163,25 +163,5 @@
                 {%- endif -%} {%- include Footer.html -%}
             </div>
         </div>
-
-        <script>
-            window.MathJax = {
-                tex: {
-                    inlineMath: [
-                        ["$", "$"],
-                        ["\\(", "\\)"],
-                    ],
-                    displayMath: [
-                        ["$$", "$$"],
-                        ["\\[", "\\]"],
-                    ],
-                },
-            };
-        </script>
-        <script
-            id="MathJax-script"
-            async
-            src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"
-        ></script>
     </body>
 </html>
