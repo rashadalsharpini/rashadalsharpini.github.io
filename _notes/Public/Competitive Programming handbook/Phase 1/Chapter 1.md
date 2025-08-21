@@ -1,6 +1,6 @@
 ---
 title: CP/Phase 1/Chapter 1
-feed: Post
+feed: show
 date: 2025-08-21
 ---
 
