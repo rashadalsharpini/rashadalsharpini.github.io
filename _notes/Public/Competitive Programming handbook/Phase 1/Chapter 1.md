@@ -2,9 +2,8 @@
 title: CP/Phase 1/Chapter 1
 feed: show
 date: 2025-08-21
-use_math: true
+layout: math
 ---
-{% include MathJax.html %}
 
 #### run program
 ```bash
