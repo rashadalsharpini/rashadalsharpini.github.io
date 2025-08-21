@@ -8,3 +8,7 @@ title: Rashad Alsharpini
 ---
 
 I am a .NET developer with a passion for building innovative solutions that solve complex real-world problems. I actively participate in competitive programming contests such as ECPC and Mutex, where I sharpen my problem-solving and algorithmic skills. In addition, I contribute to open-source projects, collaborating with developers worldwide to create impactful software.
+
+LinkedIn: [rashad alsharpini](https://www.linkedin.com/in/rashadalsharpini/)
+GitHub: [rashadalsharpini](https://github.com/rashadalsharpini)
+YouTube: [rashad alsharpini](https://www.youtube.com/@alsharpini)
