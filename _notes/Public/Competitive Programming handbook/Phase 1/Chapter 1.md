@@ -2,7 +2,6 @@
 title: CP/Phase 1/Chapter 1
 feed: show
 date: 2025-08-21
-layout: math
 ---
 
 #### run program
