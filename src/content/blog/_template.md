@@ -3,7 +3,7 @@ title: Your Post Title
 description: A brief description of your blog post.
 date: 2026-01-01
 duration: 5min
-draft: true
+draft: false
 lang: en-US
 tags: ["Tag1", "Tag2", "Tag3"]
 # image:
