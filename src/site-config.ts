@@ -1,41 +1,43 @@
 export const siteConfig = {
-  author: 'Kieran Wang',
-  title: 'Vitesse theme for Astro',
-  subtitle: 'Vitesse theme for Astro, supports Vue and UnoCSS.',
-  description: 'A Minimal, SEO-friendly portfolio and blog theme for Astro.',
+  author: 'Rashad Alsharpini',
+  title: 'my website',
+  subtitle:
+    'Software Engineer | Competitive Programmer | Mentor ICPC Zagazig Community',
+  description:
+    'Hey, I am Rashad I am a software developer who enjoys working on opensource software, GNU/Linux user (I use Arch, BTW XD).',
   image: {
-    src: '/hero.jpg',
+    src: 'alone.gif',
     alt: 'Website Main Image',
   },
-  email: 'kieranwme@gmail.com',
+  email: 'rashadalsharpini2@gmail.com',
   socialLinks: [
     {
       text: 'GitHub',
-      href: 'https://github.com/kieranwv/astro-theme-vitesse',
+      href: 'https://github.com/rashadalsharpini',
       icon: 'i-simple-icons-github',
       header: 'i-ri-github-line',
     },
     {
-      text: 'Twitter',
-      href: '',
-      icon: 'i-simple-icons-x',
-      header: 'i-ri-twitter-x-line',
-    },
-    {
       text: 'Linkedin',
-      href: '',
+      href: 'https://www.linkedin.com/in/rashadalsharpini/',
       icon: 'i-simple-icons-linkedin',
     },
     {
-      text: 'Instagram',
-      href: '',
-      icon: 'i-simple-icons-instagram',
+      text: 'Twitter',
+      href: 'https://x.com/@rscp69',
+      icon: 'i-simple-icons-x',
+      header: 'i-ri-twitter-x-line',
     },
-    {
-      text: 'Youtube',
-      href: '',
-      icon: 'i-simple-icons-youtube',
-    },
+    // {
+    //   text: 'Instagram',
+    //   href: '',
+    //   icon: 'i-simple-icons-instagram',
+    // },
+    // {
+    //   text: 'Youtube',
+    //   href: '',
+    //   icon: 'i-simple-icons-youtube',
+    // },
   ],
   header: {
     logo: {
@@ -47,14 +49,14 @@ export const siteConfig = {
         text: 'Blog',
         href: '/blog',
       },
-      {
-        text: 'Notes',
-        href: '/blog/notes',
-      },
-      {
-        text: 'Talks',
-        href: '/blog/talks',
-      },
+      // {
+      //   text: 'Notes',
+      //   href: '/blog/notes',
+      // },
+      // {
+      //   text: 'Talks',
+      //   href: '/blog/talks',
+      // },
       {
         text: 'Projects',
         href: '/projects',
@@ -67,33 +69,41 @@ export const siteConfig = {
         text: 'Blog',
         href: '/blog',
       },
-      {
-        text: 'Notes',
-        href: '/blog/notes',
-      },
-      {
-        text: 'Talks',
-        href: '/blog/talks',
-      },
+      // {
+      //   text: 'Notes',
+      //   href: '/blog/notes',
+      // },
+      // {
+      //   text: 'Talks',
+      //   href: '/blog/talks',
+      // },
     ],
   },
   footer: {
     navLinks: [
       {
-        text: 'Posts Props',
-        href: '/posts-props',
+        text: 'Home',
+        href: '/',
       },
       {
-        text: 'Markdown Style',
-        href: '/md-style',
+        text: 'Blog',
+        href: '/blog',
       },
       {
-        text: 'View on Astro',
-        href: 'https://astro.build/themes/details/vitesse-theme-for-astro/',
+        text: 'Projects',
+        href: '/projects',
       },
       {
-        text: 'GitHub Repository',
-        href: 'https://github.com/kieranwv/astro-theme-vitesse',
+        text: 'GitHub',
+        href: 'https://github.com/rashadalsharpini',
+      },
+      {
+        text: 'Linkedin',
+        href: 'https://www.linkedin.com/in/rashadalsharpini',
+      },
+      {
+        text: 'X',
+        href: 'https://x.com/rscp69',
       },
     ],
   },
