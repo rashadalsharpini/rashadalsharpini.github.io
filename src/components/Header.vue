@@ -1,9 +1,13 @@
 <script lang="ts" setup>
 import siteConfig from '@/site-config'
 import { getLinkTarget } from '@/utils/link'
-import { useWindowScroll } from '@vueuse/core'
+import { useDark, useWindowScroll } from '@vueuse/core'
 import { computed, onMounted, ref, unref } from 'vue'
 import ThemeToggle from './ThemeToggle.vue'
+
+const isDark = useDark()
+
+const logoSrc = computed(() => isDark.value ? '/favicon-white.svg' : '/favicon.svg')
 
 const navLinks = siteConfig.header.navLinks || []
 
@@ -82,7 +86,7 @@ function toggleNavDrawer() {
   >
     <div class="flex items-center h-full">
       <a href="/" mr-6 aria-label="Header Logo Image">
-        <img width="32" height="32" :src="siteConfig.header.logo.src" :alt="siteConfig.header.logo.alt">
+        <img width="32" height="32" :src="logoSrc" :alt="siteConfig.header.logo.alt">
       </a>
       <nav class="sm:flex hidden flex-wrap gap-x-6 position-initial flex-row">
         <a
