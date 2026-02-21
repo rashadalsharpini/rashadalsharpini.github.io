@@ -39,7 +39,26 @@ function formatCanonicalURL(url: string | URL) {
 <meta name="generator" content={Astro.generator} />
 
 <!-- Low Priority Global Metadata -->
-<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+<link rel="icon" type="image/svg+xml" href="/favicon.svg" id="favicon" />
+
+<script is:inline>
+  function updateFavicon() {
+    const favicon = document.getElementById('favicon')
+    if (!favicon) {
+      return
+    }
+
+    const isDark = document.documentElement.classList.contains('dark')
+    favicon.href = isDark ? '/favicon-white.svg' : '/favicon.svg'
+  }
+
+  updateFavicon()
+  new MutationObserver(updateFavicon).observe(document.documentElement, {
+    attributes: true,
+    attributeFilter: ['class'],
+  })
+  document.addEventListener('astro:page-load', updateFavicon)
+</script>
 <link rel="sitemap" href="/sitemap-index.xml" />
 <link rel="alternate" type="application/rss+xml" href="/rss.xml" title="RSS" />
 
