@@ -1,13 +1,9 @@
 <script lang="ts" setup>
 import siteConfig from '@/site-config'
 import { getLinkTarget } from '@/utils/link'
-import { useDark, useWindowScroll } from '@vueuse/core'
+import { useWindowScroll } from '@vueuse/core'
 import { computed, onMounted, ref, unref } from 'vue'
 import ThemeToggle from './ThemeToggle.vue'
-
-const isDark = useDark()
-
-const logoSrc = computed(() => isDark.value ? '/favicon-white.svg' : '/favicon.svg')
 
 const navLinks = siteConfig.header.navLinks || []
 
@@ -85,8 +81,12 @@ function toggleNavDrawer() {
     class="!fixed bg-transparent z-899 w-screen h-20 px-6 flex justify-between items-center relative"
   >
     <div class="flex items-center h-full">
-      <a href="/" mr-6 aria-label="Header Logo Image">
-        <img width="32" height="32" :src="logoSrc" :alt="siteConfig.header.logo.alt">
+      <a href="/" mr-6 aria-label="Header Logo Image" class="text-black dark:text-white">
+        <svg width="32" height="32" viewBox="0 0 225 225" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+          <g transform="translate(0,225) scale(0.1,-0.1)" stroke="none">
+            <path d="M446 1550 c-39 -12 -83 -56 -111 -110 -12 -25 -73 -200 -135 -390 -62 -190 -115 -349 -118 -353 -6 -11 204 -5 215 6 4 5 55 151 113 325 l105 317 222 3 c247 3 253 1 253 -63 0 -62 -11 -65 -213 -65 -213 0 -232 -6 -262 -84 -16 -42 -17 -50 -3 -85 9 -21 66 -111 128 -200 l112 -162 527 3 526 3 51 27 c94 50 143 131 144 238 0 80 -30 150 -85 199 -64 56 -86 61 -278 61 -121 0 -177 4 -185 12 -17 17 -15 93 2 108 8 6 25 11 38 10 13 -1 154 -2 315 -1 l291 1 31 93 c17 50 31 98 31 105 0 11 -72 13 -377 10 -373 -3 -379 -3 -425 -26 -49 -24 -99 -78 -119 -128 -17 -45 -14 -192 5 -239 22 -52 71 -103 121 -126 34 -16 66 -19 220 -19 198 0 205 -2 205 -56 0 -69 36 -64 -470 -64 l-458 0 -41 55 c-22 30 -41 57 -41 60 0 3 48 5 106 5 135 0 177 12 234 70 55 54 70 99 70 204 0 117 -40 188 -135 239 -38 21 -54 22 -310 24 -148 1 -283 -2 -299 -7z" />
+          </g>
+        </svg>
       </a>
       <nav class="sm:flex hidden flex-wrap gap-x-6 position-initial flex-row">
         <a
