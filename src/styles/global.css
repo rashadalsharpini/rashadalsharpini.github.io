@@ -20,7 +20,7 @@ html:not(.dark) {
 }
 
 #nprogress .bar {
-  background: #888;
+  background: #d79921;
   opacity: 0.75;
   position: fixed;
   z-index: 999;

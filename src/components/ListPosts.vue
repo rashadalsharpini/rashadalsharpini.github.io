@@ -68,7 +68,7 @@ function getYear(date: Date | string | number) {
             <span v-if="post.data.lang && post.data.lang.includes('zh')">· 中文</span>
           </div>
         </div>
-        <div opacity-50 text-sm>{{ post.data.description }}</div>
+        <div text-hex-5c503a dark:text-hex-989182 text-sm>{{ post.data.description }}</div>
         <div v-if="post.data.tags && post.data.tags.length" flex="~ gap-2 wrap" mt-1>
           <span
             v-for="t in post.data.tags"

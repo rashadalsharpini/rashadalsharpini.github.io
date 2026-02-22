@@ -44,6 +44,6 @@ For example, imagine you need a vacation and don't know the company policy:
 4. Execution: When you ask the AI to "check the weather," the client uses the MCP server to fetch live data from an API and brings it back into the chat
 
 ---
-so in the simplest words
+## So in the simplest words
 - RAG is about **knowing** more
 - MCP is about **doing** more

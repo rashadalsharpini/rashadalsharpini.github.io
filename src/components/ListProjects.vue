@@ -23,7 +23,7 @@ defineProps<{
         </div>
         <div font-normal lh-tight>
           <div text-lg hover:text-main>{{ project.text }}</div>
-          <div opacity-50 text-sm>{{ project.description }}</div>
+          <div text-hex-5c503a dark:text-hex-989182 text-sm>{{ project.description }}</div>
         </div>
       </a>
     </li>
