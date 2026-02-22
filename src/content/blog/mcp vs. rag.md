@@ -5,40 +5,45 @@ date: 2026-02-06
 time: 12:02
 description: A comparison of MCP (Model Context Protocol) and RAG (Retrieval Augmented Generation)
 ---
-## retrieval augmented generative
-instead of the llms spiting out an answer that could be out of date based on it's training data
-you ground the llm to look through your own data base and sources or even give it a search engine to look for an answer first
-so it would return the most up to date info
-and it is also grounded now it sites to it's source giving it more credibility so it avoid hallucinations
-privacy normally it knows whats public (it's training data)
-now you can give it access to the org private PDFs so it would answer specific  answers about you
-as in cost will retraining llm cost a lot while you could just add the more up to data info to your databases
 
-### steps to implement
-1. ingestion: collect your private data (pdfs, docs, sql databases)
-2. chunking: break the text into smaller pieces so the ai doesn't get overwhelmed
-3. embedding: run those chunks through an embedding model. this turns text into a long string of numbers (vectors) that represent the meaning of the text.
-4. vector databases: store these numbers in a specialized database like pinecone, milvus or weaviate
-5. retrieval: when a user ask a question, turn the question into a vector, find the most similar vectors in your database, and feed those "facts" to the llm as context
-#### knowing more
+## Retrieval Augmented Generation
+
+Instead of relying on training data that may be outdated, RAG grounds the LLM to search through your own data sources or use a search engine first. This ensures the model returns the most up-to-date information.
+
+RAG also provides citations, giving responses more credibility and reducing hallucinations. Additionally, it solves privacy concerns—while LLMs traditionally only know what's in their training data (public information), RAG lets you grant access to private PDFs and documents, enabling the model to answer specific questions about your organization.
+
+This approach is also more cost-effective than retraining an LLM. Instead of expensive retraining, you simply add fresh data to your database.
+
+### Steps to Implement
+
+1. **Ingestion**: Collect your private data (PDFs, docs, SQL databases)
+2. **Chunking**: Break text into smaller pieces so the AI doesn't get overwhelmed
+3. **Embedding**: Run chunks through an embedding model to convert text into vectors (numerical representations of meaning)
+4. **Vector Database**: Store vectors in specialized databases like Pinecone, Milvus, or Weaviate
+5. **Retrieval**: When a user asks a question, convert it to a vector, find the most similar vectors in your database, and feed those facts to the LLM as context
 
 ---
-## model context protocol
-mcp also solve the knowing problem but in a very different way step wise
-and what they can do with the data
-a rag system will return the insights it gathered to give the best answer
-while mcp can take these data and apply actions
 
-so let's say you need a vacation and you don't know the company policy
-so you ask the llm
-first case (llm): the llm would simply go stupid and generate answer out of thin air
-second case (rag+llm) the llm would go through the company pdfs and databases looking for the databases and then retrieve the related documents
-and then give an answer and site you to those pdfs
-third case (mcp+rag+llm) know won't only retrieve the relevant data and site you to it. it know can make actions like sending a direct email to your hr requesting a vacation
+## Model Context Protocol
 
-### steps to implement
-1. choose or build an mcp server
-2. the mcp client use a tool that supports mcp like claude desktop or ide
-3. the handshake you connect the client to the server via config file
-4. execution when you ask the ai "check the weather" the client use mcp server to fetch live data from your api and brings it back into the chat
-#### doing more
+MCP solves the "knowing" problem differently—and goes beyond just retrieving information.
+
+While a RAG system returns insights to help answer questions, MCP can take those insights and perform actions.
+
+For example, imagine you need a vacation and don't know the company policy:
+
+- **Plain LLM**: May hallucinate an answer
+- **RAG + LLM**: Retrieves relevant company documents and cites sources
+- **MCP + RAG + LLM**: Retrieves the information AND takes action, like sending an email to HR requesting vacation time
+
+### Steps to Implement
+
+1. Choose or build an MCP server
+2. Use an MCP-compatible client (like Claude Desktop or an IDE)
+3. Connect the client to the server via a config file
+4. Execution: When you ask the AI to "check the weather," the client uses the MCP server to fetch live data from an API and brings it back into the chat
+
+---
+so in the simplest words
+- RAG is about **knowing** more
+- MCP is about **doing** more
