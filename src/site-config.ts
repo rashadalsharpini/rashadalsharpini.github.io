@@ -1,6 +1,6 @@
 export const siteConfig = {
   author: 'Rashad Alsharpini',
-  title: 'my website',
+  title: 'RS',
   subtitle:
     'Software Engineer | Competitive Programmer | Mentor ICPC Zagazig Community',
   description:
